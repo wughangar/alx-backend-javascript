@@ -2,7 +2,7 @@ const BRAND = Symbol('brand');
 const MOTOR = Symbol('motor');
 const COLOR = Symbol('color');
 
-class Car {
+export default class Car {
   constructor(brand, motor, color) {
     this[BRAND] = brand;
     this[MOTOR] = motor;
