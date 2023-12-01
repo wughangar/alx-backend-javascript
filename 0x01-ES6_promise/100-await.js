@@ -6,8 +6,8 @@ async function asyncUploadUser() {
     const userResponse = await createUser();
 
     return {
-      photo: photoResponse,
-      user: userResponse,
+      photoResponse,
+      userResponse,
     };
   } catch (error) {
     return {
