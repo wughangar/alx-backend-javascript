@@ -7,7 +7,7 @@ export default class Airport {
     this._code = code;
   }
 
-  toString() {
-    return `Airport [${this._code}]`;
+  get [Symbol.toStringTag]() {
+    return this._code;
   }
 }
