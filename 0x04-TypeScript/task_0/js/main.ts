@@ -2,21 +2,21 @@ interface Student {
   firstName: string;
   lastName: string;
   age: number;
-  loaction: string;
+  location: string;
 }
 
 const student1: Student = {
-  firstName = 'Loki',
-  lastName = 'Rose',
-  age = 20,
-  location = 'Kenya',
+  firstName : 'Loki',
+  lastName : 'Rose',
+  age : 20,
+  location : 'Kenya',
 };
 
 const student2 : Student = {
-  firstName = 'Agather',
-  lastName = 'Chari',
-  age = 25,
-  location = 'Kenya',
+  firstName : 'Agather',
+  lastName : 'Chari',
+  age : 25,
+  location : 'Kenya',
 };
 
 const studentList: Student[] = [student1, student2];
