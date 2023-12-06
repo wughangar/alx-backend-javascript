@@ -21,11 +21,11 @@ const student2 : Student = {
 
 const studentList: Student[] = [student1, student2];
 
-onst renderTable = () => {
+const renderTable = () => {
   const table = document.createElement('table');
   const tableBody = document.createElement('tbody');
 
-  studentsList.forEach((student) => {
+  studentList.forEach((student) => {
     const row = tableBody.insertRow();
     const cellFirstName = row.insertCell();
     const cellLocation = row.insertCell();
