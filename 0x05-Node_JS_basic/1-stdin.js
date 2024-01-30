@@ -1,16 +1,15 @@
-// 1. Using Process stdin
+process.stdout.write('Welcome to Holberton School, what is your name?\n');
 
-const readline = require('readline');
+process.stdin.resume();
+process.stdin.setEncoding('utf8');
 
-const rl = readline.createInterface({
-  input: process.stdin,
-  output: process.stdout
+process.stdin.on('data', (data) => {
+  const input = data.trim();
+
+  process.stdout.write(`Your name is: ${input}\n`);
+  process.exit();
 });
 
-console.log('Welcome to Holberton School, what is your name?');
-
-rl.question('', (answer) => {
-  console.log(`Your name is: ${answer}`);
-  rl.close();
-  console.log('This important software is now closing');
+process.on('exit', () => {
+  process.stdout.write('This important software is now closing\n');
 });
