@@ -1,6 +1,4 @@
 // displays a message to STDOUT
-
-
 module.exports = displayMessage
 
 
