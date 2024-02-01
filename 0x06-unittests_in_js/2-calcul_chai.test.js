@@ -3,19 +3,19 @@ const calculateNumber = require('./2-calcul_chai');
 
 
 describe('calculateNumber function', () => {
-	it('should add two rounded numbers when type is SUM', () => {
+	it('should add two rounded numbers when type is SUM', function () => {
 		chai.expect(calculateNumber('SUM', 1.1, 2.2)).to.equal(3);
 	});
 
-	it('should subtract two rounded numbers when type is SUBTRACT', () => {
+	it('should subtract two rounded numbers when type is SUBTRACT',function () => {
 		chai.expect(calculateNumber('SUBTRACT', 5.5, 2.2)).to.equal(3.3);
 	});
 
-	it('should divide two rounded numbers when case is DIVIDE', () => {
+	it('should divide two rounded numbers when case is DIVIDE', function () => {
 		chai.expect(calculateNumber('DIVIDE', 6.6, 2.2)).to.equal(3);
 	});
 
-	it('should return Error when trying to divide by 0', () => {
+	it('should return Error when trying to divide by 0', function () => {
 		chai.expect(calculateNumber('DIVIDE', 6.6, 0)).to.equal('Error');
 	});
 
